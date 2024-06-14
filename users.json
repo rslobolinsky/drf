@@ -26,8 +26,8 @@
       "user": 2,
       "course": 1,
       "lesson": null,
-      "date": "2023-05-15",
-      "sum": 150000,
+      "date": "2024-06-10",
+      "sum": 15000,
       "pay_method": "cash"
     }
   },
@@ -38,8 +38,8 @@
       "user": 2,
       "course": null,
       "lesson": 2,
-      "date": "2023-05-20",
-      "sum": 30000,
+      "date": "2024-06-06",
+      "sum": 3000,
       "pay_method": "translation"
     }
   },
@@ -50,8 +50,8 @@
       "user": 2,
       "course": null,
       "lesson": 3,
-      "date": "2023-05-30",
-      "sum": 25000,
+      "date": "2024-06-07",
+      "sum": 2500,
       "pay_method": "translation"
     }
   }

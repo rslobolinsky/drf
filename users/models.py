@@ -38,10 +38,10 @@ class Payment(models.Model):
 
     date = models.DateField(auto_now_add=True, verbose_name='дата платежа')
     sum = models.PositiveIntegerField(verbose_name='сумма платежа')
-    pay_method = models.CharField(max_length=10, choices=METHODS, verbose_name='способ оплаты')
+    pay_method = models.CharField(max_length=15, choices=METHODS, verbose_name='способ оплаты')
 
     def __str__(self):
-        return f'{self.user} за {self.course if self.course else self.lesson }, {self.sum} руб. ({self.date})'
+        return f'{self.user} за {self.course if self.course else self.lesson}, {self.sum} руб. ({self.date})'
 
     class Meta:
         verbose_name = 'платеж'
