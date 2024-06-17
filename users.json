@@ -1,58 +1,58 @@
  [
    {
-    "model": "users_user",
-    "pk": 2,
-    "fields": {
-      "password": "qwerty",
-      "last_login": null,
-      "is_superuser": false,
-      "first_name": "",
-      "last_name": "",
-      "is_staff": false,
-      "is_active": true,
-      "date_joined": "2024-06-14T15:23:44.598Z",
-      "email": "romansl1313@yandex.ru",
-      "phone": "89897918616",
-      "city": "Astrakhan",
-      "avatar": "",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "users.payment",
-    "pk": 1,
-    "fields": {
-      "user": 2,
-      "course": 1,
-      "lesson": null,
-      "date": "2024-06-10",
-      "sum": 15000,
-      "pay_method": "cash"
-    }
-  },
-  {
-    "model": "users.payment",
-    "pk": 1,
-    "fields": {
-      "user": 2,
-      "course": null,
-      "lesson": 2,
-      "date": "2024-06-06",
-      "sum": 3000,
-      "pay_method": "translation"
-    }
-  },
-  {
-    "model": "users.payment",
-    "pk": 1,
-    "fields": {
-      "user": 2,
-      "course": null,
-      "lesson": 3,
-      "date": "2024-06-07",
-      "sum": 2500,
-      "pay_method": "translation"
-    }
-  }
+      "model": "users_user",
+      "pk": 2,
+      "fields": {
+        "password": "qwerty",
+        "last_login": null,
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-06-14T15:23:44.598Z",
+        "email": "romansl1313@yandex.ru",
+        "phone": "89897918616",
+        "city": "Astrakhan",
+        "avatar": "",
+        "groups": [],
+        "user_permissions": []
+      }
+   },
+   {
+      "model": "users.payment",
+      "pk": 1,
+      "fields": {
+        "user": 2,
+        "course": 1,
+        "lesson": null,
+        "date": "2024-06-10",
+        "sum": 15000,
+        "pay_method": "cash"
+     }
+   },
+   {
+      "model": "users.payment",
+      "pk": 1,
+      "fields": {
+        "user": 2,
+        "course": null,
+        "lesson": 2,
+        "date": "2024-06-06",
+        "sum": 3000,
+        "pay_method": "translation"
+     }
+   },
+   {
+      "model": "users.payment",
+      "pk": 1,
+      "fields": {
+        "user": 2,
+        "course": null,
+        "lesson": 3,
+        "date": "2024-06-07",
+        "sum": 2500,
+        "pay_method": "translation"
+      }
+   }
 ]
