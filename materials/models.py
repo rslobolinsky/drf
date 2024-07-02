@@ -6,6 +6,7 @@ class Course(models.Model):
     name = models.CharField(max_length=300, verbose_name='название')
     preview = models.ImageField(upload_to='courses/', verbose_name='превью', blank=True, null=True)
     description = models.TextField(verbose_name='описание', blank=True, null=True)
+    updated_at = models.DateTimeField(auto_now=True, verbose_name='обновлено')
     owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, verbose_name='владелец', blank=True,
                               null=True)
 
