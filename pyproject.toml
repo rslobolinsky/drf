@@ -34,6 +34,18 @@ stack-data = "^0.6.3"
 traitlets = "^5.14.3"
 typing-extensions = "^4.12.2"
 wcwidth = "^0.2.13"
+drf-yasg = "^1.21.7"
+inflection = "^0.5.1"
+packaging = "^24.1"
+pytz = "^2024.1"
+pyyaml = "^6.0.1"
+uritemplate = "^4.1.1"
+stripe = "^10.1.0"
+urllib3 = "^2.2.2"
+requests = "^2.32.3"
+idna = "^3.7"
+certifi = "^2024.6.2"
+charset-normalizer = "^3.3.2"
 
 
 [build-system]
