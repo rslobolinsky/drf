@@ -8,7 +8,7 @@ from materials.models import Course, Lesson, Subscribe
 from materials.paginations import MaterialsPaginator
 from materials.serializers import CourseSerializer, LessonSerializer
 from users.permissions import IsModer, IsOwner
-from materials.tasks import send_mail_to_owner
+from materials.tasks import send_mail
 
 
 class CourseViewSet(viewsets.ModelViewSet):
@@ -30,7 +30,7 @@ class CourseViewSet(viewsets.ModelViewSet):
             email = sub.user.email
             all_email_list.append(email)
 
-        send_mail_to_owner.delay(all_email_list)
+        send_mail.delay(all_email_list)
         course.save()
     def get_permissions(self):
         if self.action == 'create':
