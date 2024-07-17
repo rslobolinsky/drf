@@ -1,9 +1,17 @@
-FROM python:3
+# Используем базовый образ Python
+FROM python:3.11
 
-WORKDIR /drf
+# Устанавливаем рабочую директорию в контейнере
+WORKDIR /app
 
-COPY ./pyproject.toml /drf
+# Копируем зависимости в контейнер
+COPY requirements.txt .
+
+# Устанавливаем зависимости
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Копируем код приложения в контейнер
 COPY . .
-RUN pip install poetry
-RUN poetry install
 
+# Команда для запуска приложения при старте контейнера
+CMD ["python", "app.py"]
