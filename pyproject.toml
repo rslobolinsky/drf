@@ -3,7 +3,7 @@ name = "drf-hw"
 version = "0.1.0"
 description = ""
 authors = ["Ramzes_13 <rslobolinsky13@gmail.com>"]
-readme = "README.md"
+#readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -48,6 +48,7 @@ certifi = "^2024.6.2"
 charset-normalizer = "^3.3.2"
 celery = "^5.4.0"
 setuptools = "^70.2.0"
+poetry-plugin-export = "^1.8.0"
 
 
 [build-system]
