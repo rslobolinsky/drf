@@ -41,5 +41,36 @@ services:
         condition: service_healthy
     volumes:
       - .:/app
+
+  celery:
+    build: .
+    networks:
+      - drf_network
+    tty: true
+    command: celery -A config worker -l INFO
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    depends_on:
+      redis:
+        condition: service_healthy
+      app:
+        condition: service_started
+
+  celery_beat:
+    build: .
+    networks:
+      - drf_network
+    tty: true
+    command: [ "sh", "-c", "celery -A config beat -l INFO && celery -A config -l info -P gevent" ]
+    env_file:
+      - .env
+    depends_on:
+      redis:
+        condition: service_healthy
+      app:
+        condition: service_started
+
 volumes:
   pg_data:
